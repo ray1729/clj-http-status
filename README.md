@@ -15,16 +15,26 @@ Install from Clojars:
     
 To use in your programs:
 
-    (require '[clj-http-status :as s])
+    ;; Import the constants into your namespace
+    (require '[clj-http-status.constants :refer :all])
     
-    (s/HTTP_OK)
+    s/HTTP_OK
     ;;=> 200
     
-    (s/success? 200)
+    s/HTTP_NOT_FOUND
+    ;;=> 404
+    
+    ;; Import functions for testing the status type
+    (require '[clj-http-status.core :as status])
+    
+    (status/success? 200)
     ;;=> true
     
     (s/error? 200)
     ;;=> false
+    
+    (status/client-error? 404)
+    ;;=> true
 
 ## License
 
