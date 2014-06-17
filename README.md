@@ -30,7 +30,7 @@ To use in your programs:
     (status/success? 200)
     ;;=> true
     
-    (s/error? 200)
+    (status/error? 200)
     ;;=> false
     
     (status/client-error? 404)
