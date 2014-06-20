@@ -1,4 +1,4 @@
-(defproject clj-http-status "0.1.0-SNAPSHOT"
+(defproject clj-http-status "0.1.0"
   :description "HTTP status codes"
   :url "https://github.com/ray1729/clj-http-status"
   :license {:name "Eclipse Public License"
